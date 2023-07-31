@@ -55,3 +55,5 @@ Now that you have a web server up and running, you need to install a Database Ma
 Again, use ‘apt’ to acquire and install this software:
 
 sudo apt install mysql-server
+
+<img width="1208" alt="Screenshot 2023-07-30 225555" src="https://github.com/joeboafo/darey.io_project/assets/135559039/b46d3504-ffa5-4bbf-8aea-bc023f0de1fb">
