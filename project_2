@@ -86,3 +86,17 @@ mysql> exit
 sudo mysql_secure_installation
 <img width="1280" alt="Screenshot 2023-07-30 231704" src="https://github.com/joeboafo/darey.io_project/assets/135559039/1106bcc3-7bbc-41e6-ba2c-9d290f5d9fa6">
 <img width="611" alt="Screenshot 2023-07-30 232107" src="https://github.com/joeboafo/darey.io_project/assets/135559039/a1284698-d5f9-4eb9-9ec6-7d8c35a3fbb9">
+
+STEP 3 – INSTALLING PHP
+Step 3 – Installing PHP
+You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
+
+While Apache embeds the PHP interpreter in each request, Nginx requires an external program to handle PHP processing and act as a bridge between the PHP interpreter itself and the web server. This allows for a better overall performance in most PHP-based websites, but it requires additional configuration. You’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
+
+To install these 2 packages at once, run:
+
+sudo apt install php-fpm php-mysql
+When prompted, type Y and press ENTER to confirm installation.
+
+You now have your PHP components installed. Next, you will configure Nginx to use them.
+
