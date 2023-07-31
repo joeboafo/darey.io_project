@@ -82,3 +82,4 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord
 Exit the MySQL shell with:
 
 mysql> exit
+<img width="977" alt="Screenshot 2023-07-30 230856" src="https://github.com/joeboafo/darey.io_project/assets/135559039/0b251150-125c-4055-aeea-624a477cac29">
