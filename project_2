@@ -144,4 +144,5 @@ sudo nginx -t
 <img width="1280" alt="Screenshot 2023-07-31 000703" src="https://github.com/joeboafo/darey.io_project/assets/135559039/742bc42b-b34d-40dd-b414-79093cc8b946">
 sudo unlink /etc/nginx/sites-enabled/default
 sudo systemctl reload nginx
+sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
 
