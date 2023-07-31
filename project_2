@@ -33,3 +33,5 @@ sudo apt update -y
 sudo apt install nginx
 
 <img width="420" alt="Screenshot_20230131_103238" src="https://github.com/joeboafo/darey.io_project/assets/135559039/831116ff-7ec5-4885-ba3d-f1e2233b0c22">
+
+sudo systemctl status nginx
