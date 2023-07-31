@@ -139,5 +139,6 @@ server {
 
 }
 <img width="1280" alt="Screenshot 2023-07-31 000010" src="https://github.com/joeboafo/darey.io_project/assets/135559039/66e6887f-3963-4255-a00a-9ab318ccd55f">
+sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
 
 
