@@ -109,4 +109,6 @@ Create the root web directory for your_domain as follows:
 
 sudo mkdir /var/www/projectLEMP
 Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:
+<img width="1280" alt="Screenshot 2023-07-30 235531" src="https://github.com/joeboafo/darey.io_project/assets/135559039/62413392-7b84-4728-ba4f-712ad6f39ca1">
+
 
