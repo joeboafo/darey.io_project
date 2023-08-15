@@ -58,3 +58,29 @@ Select your preferred region (the closest to you) and launch a new EC2 instance 
 <img width="821" alt="Screenshot 2023-08-14 230756" src="https://github.com/joeboafo/darey.io_project/assets/135559039/72e3e674-e2e8-49d8-bfea-f55198843269">
 <img width="1224" alt="Screenshot 2023-08-14 231259" src="https://github.com/joeboafo/darey.io_project/assets/135559039/8e396c44-7467-497b-a963-cd784c0d932f">
 <img width="1280" alt="Screenshot 2023-08-14 231339" src="https://github.com/joeboafo/darey.io_project/assets/135559039/938c27d6-9f3f-4947-96cd-e378fbbeb04b">
+IMPORTANT – save your private key (.pem file) securely and do not share it with anyone! If you lose it, you will not be able to connect to your server ever again!
+
+For Windows users, you will need a tool called putty to connect to your EC2 Instance. Download Putty Here.
+For Mac users, you can simply open up Terminal and use the ssh command to get into the server.
+IMPORTANT NOTICE
+Both Putty and ssh use the SSH protocol to establish connectivity between computers. It is the most secure protocol because it uses crypto algorithms to encrypt the data that is transmitted – it uses TCP port 22 which is open for all newly created EC2 intances in AWS by default. Most of these terminologies will make more sense to you as you proceed. So for now, if nothing makes sense, just ignore. But be assured that the information is already registered in your sub-conscious mind. So it will become useful to you soon.
+
+The process to connect to the virtual server is different between Windows and Mac. So lets take a quick tour.
+
+Connecting to EC2 terminal
+loader-icon
+Using the terminal on MAC/Linux
+Using Windows Terminal
+The terminal is already installed by default. You just need to open it up.
+You do not need to convert to a .ppk file. Just use the same key as downloaded from AWS.
+Change directory into the loacation where your PEM file is. Most likely will be in the Downloads folder
+cd ~/Downloads
+IMPORTANT - Anywhere you see these anchor tags < > , going forward, it means you will need to replace the content in there with values specific to your situation. For example, if we need you to replace the name you have saved the private key on your machine, we will write something like < private-key-name >.
+
+If the private key you downloaded was named my-private-key.pem simply remove the anchor tags and insert my-private-key.pem in the command you are required to execute. Lets try this and follow the instructions below to get some work done.
+
+Change premissions for the private key file (.pem), otherwise you can get an error "Bad permissions"
+sudo chmod 0400 <private-key-name>.pem
+Connect to the instance by running
+ssh -i <private-key-name>.pem ubuntu@<Public-IP-address>
+Congratulations! You have just created your very first Linux Server in the Cloud and our set up looks like this now: (You are the client)
